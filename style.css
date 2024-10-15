@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #FFC2C7;
+}
+
+.card {
+    /* width: 640px;
+    height: 400px; */
+    width: 720px;
+    height: 480px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    transition: 1s;
+}
+
+.card:hover {
+    /* transform: rotate(-5deg); */
+    transform: rotate(2deg);
+}
+
+.card:hover .outside {
+    transform: rotateY(-130deg);
+}
+
+.outside,
+.inside {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50.1%;
+    border-radius: 10px;
+}
+
+.inside {
+    background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
+    line-height: 3;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+}
+
+.outside {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    border-radius: 10px;
+}
+
+.front {
+    background-color: #ffffff;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
+}
+
+.cake {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+}
+
+.bd-cake {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    margin: auto;
+}
+
+.header-bd {
+    font-family: "Bree Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #FB4570;
+}
+
+.birthdate {
+    font-family: "Bree Serif", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #FAB333;
+}
+
+sup {
+    font-size: 10px;
+    vertical-align: super;
+}
+
+.inside img {
+    width: 25%;
+    height: 20%;
+    margin: 0;
+    text-align: center;
+}
+
+.inside p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.music {
+    padding: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: right;
+}
